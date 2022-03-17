@@ -1,0 +1,55 @@
+/* General styles*/
+body{
+    background: #000;
+    margin: 0;
+    padding: 0;
+
+}
+main{
+    margin: 3rem auto;
+    width: 20rem;
+    background: #262833;
+    border-radius: 5px;
+}
+button{
+    background: none;
+    border: none;
+    font-size: larger;
+    color: #acacac
+}
+
+/* Aesthetics */
+
+.screen{
+    height: 7rem;
+}
+
+.UI{
+    background:#212121;
+    height: 15rem;
+    display: grid;
+    grid-template-columns: 70% 20% 10%;
+}
+
+.arrow{
+    background: #7e8ce0;
+}
+.operators{
+    border-left: 1px solid rgb(128, 128, 128,.1);
+}
+.operators button{
+    color: #7e8ce0;
+}
+
+/*Structure*/
+.number_panel, .optional_operators{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.operators, .arrow{
+    display: grid;
+    grid-template-columns: auto;
+}
+.optional_operators{
+    display: none;
+}
