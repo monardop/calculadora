@@ -11,11 +11,17 @@ main{
     background: #262833;
     border-radius: 5px;
 }
+
 button{
     background: none;
     border: none;
     font-size: larger;
     color: #acacac
+}
+button:active{
+    background-color: rgba(182, 181, 181, 0.589);
+    border-radius: 5rem;
+    transition-delay: 1ms;
 }
 
 /* Aesthetics */
@@ -52,4 +58,18 @@ button{
 }
 .optional_operators{
     display: none;
+}
+
+@media screen and (max-height: 400px) {
+    main{
+        width: 10rem;
+        height: 8rem;
+        margin-top: 2rem;
+    }
+    .screen{
+        height: 3rem;
+    }
+    .UI{
+        height: 8rem;
+    }
 }
