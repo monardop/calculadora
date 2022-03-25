@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Calculator</title>
+    <script src="app.js"></script>
 </head>
 <body>
     <main>
@@ -24,26 +25,26 @@
         <div class="UI">
             
                 <div class="number_panel">
-                    <button id="1">1</button>
-                    <button id="2">2</button>
-                    <button id="3">3</button>
-                    <button id="4">4</button>
-                    <button id="5">5</button>
-                    <button id="6">6</button>
-                    <button id="7">7</button>
-                    <button id="8">8</button>
-                    <button id="9">9</button>
-                    <button id="0">0</button>
-                    <button id="point">.</button>
+                    <button id="1" onclick="introducirNumero(1)">1</button>
+                    <button id="2" onclick="introducirNumero(2)">2</button>
+                    <button id="3" onclick="introducirNumero(3)">3</button>
+                    <button id="4" onclick="introducirNumero(4)">4</button>
+                    <button id="5" onclick="introducirNumero(5)">5</button>
+                    <button id="6" onclick="introducirNumero(6)">6</button>
+                    <button id="7" onclick="introducirNumero(7)">7</button>
+                    <button id="8" onclick="introducirNumero(8)">8</button>
+                    <button id="9" onclick="introducirNumero(9)">9</button>
+                    <button id="0" onclick="introducirNumero(0)">0</button>
+                    <button id="point" onclick="introducirNumero(1)">.</button>
                     <button id="equals">=</button>
                 </div>
 
                 <div class="operators">
                     <button id="delete"><-</button>
-                    <button id="divide">%</button>
-                    <button id="multiply">x</button>
-                    <button id="minus">-</button>
-                    <button id="plus">+</button>
+                    <button id="divide" onclick="operadorBasico()">%</button>
+                    <button id="multiply" onclick="operadorBasico()">x</button>
+                    <button id="minus" onclick="operadorBasico()">-</button>
+                    <button id="plus" onclick="operadorBasico()">+</button>
                 </div>
 
                 <div class="arrow">
